@@ -23,3 +23,13 @@ In this hw, you will work on the sample Comp484 site to determine where lists ar
 			b.	Find the section for HTML terms
 			c. Examine the terms and their descriptions. Is this the best semantic grouping for the content?
 			d. If not, organize the links into the appropriate list type
+
+
+
+
+Structure: 
+
+Index:
+	- Incas
+	- Cordillera blanca
+	- Parque nacional Huazcaran
