@@ -67,7 +67,9 @@ dd {
 	margin-bottom: 1.4em;
 }
 table {
-	margin-top: 1em;
+	/*margin: 1em auto;   used to center table if needed*/
+	border-collapse: collapse;
+	border: 1px solid #666;
 }
 caption {
 	margin: 0;
@@ -77,6 +79,12 @@ caption {
 }
 td, th {
 	padding: 10px;
+	border: 1px solid #666;
+}
+table img { /*Larger images for the table */
+	width: 210px;
+	max-width: 100%;
+	height: auto;
 }
 .center {
 	text-align: center;
@@ -108,22 +116,22 @@ blockquote {
 	float: right;
 	margin-left: 10px;
 }
-.book {
+.book { /* added class to style book sections*/
 	display: flow-root;
 }
 section h4 {
-	color: rgb(5, 5, 5);
+	color: rgb(5, 5, 5); /* changed from rgb(83, 104, 138) to rgb(5, 5, 5) for better readability */
 	clear: both;
 }
 .flowLeft {
 	float: left;
 	margin-right: 10px;
 }
-.centerImage {
+.centerImage { /* added class to center images, if needed */
   display: block;
   margin: 0 auto;
 }
-abbr { 
+abbr {  /* added styling for abbreviation elements, so they stand out */
   font-style: italic;
   color: chocolate;
 }
