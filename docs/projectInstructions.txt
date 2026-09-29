@@ -1,0 +1,14 @@
+For this assigment I have used: 
+ 	Elements: <small>, ,<thead> , <abbr> 
+	Atribbutes: hreflang ,decoding, elementtiming 
+
+<small> has been used in the index page as well several other pages.
+<thead> has been used only in the index and trails pages, as they are the only ones with a table.
+<abbr> has been used in the index page as well as most of other html pages, as <abbr> is used to denote abbreviations.
+
+
+-hreflang: has been used in the top part of each page, inside the html head. However, it is worth noting that it will only work once the link is to an actual website, and not a self-contained locally hosted file. In practice, the href inside the link would point to a full https:// domain, and then google and other search engines would be able to make use of the hrflang element. To be more precise, Google and other search engines will ignore hreflang tags that do not use the full https:// domain.
+	-hrenflang is also inside the reference at the bottom, however, its more like
+
+-decoding: is used in a couple of images throught the different htmls. To be more specific, those that sit at the bottom, as decoding="async" lets the browser decode the image when it can do so without delaying other page rendering. This is completly optional, but ive used it on the last images since that is the last thing that is seen by the user, as they are not in view when the page loads.
+
