@@ -30,8 +30,9 @@
               <img
                 src="images/cordBlanca.jpg"
                 alt="Mountains of the Cordillera Blanca"
-                 width="400" 
-                 height="300"
+                width="400" 
+                height="300"
+                elementtiming="CordBlancaCover"
               />
               <figcaption><small>Standard 6.5x8 Inches dimentions</small>.</figcaption>
           </figure>
@@ -83,6 +84,7 @@
                   alt="The Cordillera Blanca from Laguna Radián, 5km."
                   width="977" 
                   height="417"
+                  elementtiming="CordBLagRadian"
                 />
                 <figcaption><small> - The Cordillera Blanca from Laguna Radián, 5km. northeast of the city of Huaraz, 2023: Nevados Huandoy (6395m),<br> Huascarán (6756 and 6655m), Chopicalqui (6354m), Hualcán (6122m) and Copa (6188m).</small></figcaption>
             </figure>
@@ -93,6 +95,7 @@
                   alt="The five summits of Pucahirca"
                   width="977" 
                   height="417"
+                  elementtiming="FiveSummits"
                 />
                 <figcaption><small>The five summits of Pucahirca (5919m, 6030m, 6046m, 6014m & 6039m) and Rinrihirca (5810m) seen to the northeast from Nevado Alpamayo, 1984. </small></figcaption>
             </figure>
@@ -107,6 +110,7 @@
                   height="384"
                   style="max-width: 100%; height: auto;"
                   decoding="async"
+                  elementtiming="Artesonraju"
                 />
                 <figcaption><small> - The north (“Paramount”) side of Artesonraju (6025m) seen from the Alpamayo base camp in the Quebrada Arhuaycocha, 1984</small></figcaption>
             </figure>
@@ -118,6 +122,7 @@
                   height="384"
                   style="max-width: 100%; height: auto;"
                   decoding="async"
+                  elementtiming="PuntaUnion"
                 />
                 <figcaption><small> - Punta Unión (4750m) is the high point of the popular Vaquería-Santa Cruz trail. The view west down the long Quebrada Santa Cruz to the west includes Santa Cruz Sur (6259m, in the distance) and Quitaraju (6036m).</small></figcaption>
               </figure>
@@ -133,5 +138,21 @@
 
       <!-- 2026 • Jim Bartle • All Rights Reserved -->
     </footer>
+
+    
+    <script>
+      const observer = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+          console.log("Element:", entry.name);
+          console.log("Load time:", entry.startTime);
+        }
+      });
+
+      observer.observe({ type: "element", buffered: true });
+    </script>
+    <!-- This little bit before the end of the body is where the observer scrip is to be placed, as it needs to be placed AFTER the elements it needs to observe. Placing it at the bottom ensures that.
+    What the observer does is collect performance data. 
+    
+    -->
   </body>
 </html>

@@ -34,6 +34,7 @@
               width="300"
               height="400"
               class="flowRight"
+              elementtiming="TrailsCover"
             /> The book is a small hand guide, with 4.25" x 6.87" dimentions, and is 159 pages long. The book contains: </p>
             <ul>
               <li>Descriptions of 26 hikes, more tan 1000 kilometers of trails, among the 6000-meter peaks of the cordilleras of north-central Peru.</li>
@@ -169,6 +170,7 @@
               height="662"
               class="flowleft"
               decoding="async"
+              elementtiming="trails1"
             />
             <img
               src="images/trails2.jpg"
@@ -176,10 +178,12 @@
               width="500"
               height="662"
               decoding="async"
+              elementtiming="Trails2"
               
             />
             <br>
             <small>Pictures of the sketch maps taken directly from the guide. Region of Ancash. </small>
+            <!-- the elementiming marks the 2 images for the observer to...observe, as its name it indicates. The observer logs in performance parameters, such as how long did it take to render/load in, etc. -->
         </section>
       </article>
     </main>
@@ -191,5 +195,20 @@
 
       <!-- 2026 • Jim Bartle • All Rights Reserved -->
     </footer>
+
+    <script>
+      const observer = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+          console.log("Element:", entry.name);
+          console.log("Load time:", entry.startTime);
+        }
+      });
+
+      observer.observe({ type: "element", buffered: true });
+    </script>
+    <!-- This little bit before the end of the body is where the observer scrip is to be placed, as it needs to be placed AFTER the elements it needs to observe. Placing it at the bottom ensures that.
+    What the observer does is collect performance data. 
+    
+    -->
   </body>
 </html>

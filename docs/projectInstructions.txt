@@ -12,3 +12,8 @@ For this assigment I have used:
 
 -decoding: is used in a couple of images throught the different htmls. To be more specific, those that sit at the bottom, as decoding="async" lets the browser decode the image when it can do so without delaying other page rendering. This is completly optional, but ive used it on the last images since that is the last thing that is seen by the user, as they are not in view when the page loads.
 
+-elementtiming: it marks a picture with a tag for an observer to collect performance data of the picture/element. The observer logs in performance parameters, such as how long did it take to render/load in, etc, into the console. The observer logs the information into the Brownser's developer console, not the computer/laptop. To see the logs one needs to press F12, then Console tab, and then refresh the page. With that said, neither the elementtiming nor the observer affect the page design. 
+	- Ive used both elementtiming and observer in a couple of htmls for demonstration, such as all images in trails, and all the images in cordillera blanca, in order to see if there is a notisable the difference between an image with decoding = "async" vs one without it.
+
+
+
