@@ -129,7 +129,7 @@ section h4 {
 	float: left;
 	margin-right: 10px;
 }
-.centerImage { /* added class to center images, if needed */
+.centerImage { /* added class to center images*/
   display: block;
   margin: 0 auto;
 }
