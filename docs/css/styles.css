@@ -95,12 +95,14 @@ header h2 {
 }
 aside {
 	padding: 1em;
-	background:rgb(83, 104, 138);
-	color: white;
+	padding-left: 1.2em;
+	background: #e7f0e8;
+	color: #222;
+	border: 1px solid #000; /*Border color for aside, alongside margin below. */
 	margin-bottom: 1em;
 }
 aside h4 {
-	color: white;
+	color: #222; /*Color change for aside, for it to be consistant with the one above.*/ 
 }
 footer {
 	border-top: 1px solid gray;
