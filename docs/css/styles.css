@@ -2,6 +2,31 @@ html, body {
 	background: #D91023; /* Peruvian flag red */
 	margin: 0;
 }
+img { /*so the images dont overflow when the website changes shape */
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+figure {
+	max-width: 100%;
+}
+.map-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 1em;
+}
+.map-gallery figure {
+	flex: 1 1 300px;
+	min-width: 0;
+	margin: 0;
+	max-width: 500px;
+}
+.map-gallery img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;

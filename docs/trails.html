@@ -28,6 +28,7 @@
         <header>
           <h3>The Book:</h3>
           <p>
+            <!-- the book covers are always the same size, unlike the picture of places. If the covers get too small they cant be read.-->
             <img
               src="images/trails.jpg"
               alt="Trails of the Cordillera Blanca and Huayhuash"
@@ -163,24 +164,29 @@
         </section>
         <section style="display: flow-root;"> <!-- to prevent the image from clipping through the bottom-->
           <h3>General Area Maps</h3>
-            <img
-              src="images/trails1.jpg"
-              alt="Trails of the Cordillera Blanca and Huayhuash"
-              width="500"
-              height="662"
-              class="flowleft"
-              decoding="async"
-              elementtiming="trails1"
-            />
-            <img
-              src="images/trails2.jpg"
-              alt="Trails of the Cordillera Blanca and Huayhuash"
-              width="500"
-              height="662"
-              decoding="async"
-              elementtiming="Trails2"
-              
-            />
+          <br>
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1em;">
+            <figure class="centerImage" style="flex: 1 1 300px; min-width: 0; margin: 0;">
+              <img
+                  src="images/trails2.jpg"
+                  alt="Trails of the Cordillera Blanca and Huayhuash"
+                  width="500"
+                  height="662"
+                  decoding="async"
+                  elementtiming="trails2"
+                />
+            </figure>
+            <figure class="centerImage" style="flex: 1 1 300px; min-width: 0; margin: 0;">
+                <img
+                  src="images/trails1.jpg"
+                  alt="Trails of the Cordillera Blanca and Huayhuash"
+                  width="500"
+                  height="662"
+                  decoding="async"
+                  elementtiming="Trails1"
+                />
+              </figure>
+            </div>
             <br>
             <small>Pictures of the sketch maps taken directly from the guide. Region of Ancash. </small>
             <!-- the elementiming marks the 2 images for the observer to...observe, as its name it indicates. The observer logs in performance parameters, such as how long did it take to render/load in, etc. -->
