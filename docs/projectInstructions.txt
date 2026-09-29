@@ -1,10 +1,12 @@
 For this assigment I have used: 
- 	Elements: <small>, ,<thead> , <abbr> 
-	Atribbutes: hreflang ,decoding, elementtiming 
+ 	Elements: <small>, <thead>, <abbr> 
+	Atribbutes: hreflang, decoding, elementtiming 
 
-<small> has been used in the index page as well several other pages.
-<thead> has been used only in the index and trails pages, as they are the only ones with a table.
-<abbr> has been used in the index page as well as most of other html pages, as <abbr> is used to denote abbreviations.
+<small> has been used in the index page as well several other pages. Used for disclaimer or for small notes, such as the ones below most pictures.
+
+<thead> has been used in the index and trails pages, as they are the only ones with a table.
+
+<abbr> has been used in the index page as well as in cordBlanca, cordHuayhuash and MachuPicchu, as <abbr> is used to denote abbreviations as needed. When including an abbreviation or acronym, <abbr> provides a full expansion of the term in plain text on first use, along with the <abbr> to mark up the abbreviation. This informs the user what the abbreviation or acronym means. If the full acronym is included in the title inside of the abbr, then the user can hover over the abbr to get a small pop up that discloses the full abbreviation.
 
 
 -hreflang: has been used in the top part of each page, inside the html head. However, it is worth noting that it will only work once the link is to an actual website, and not a self-contained locally hosted file. In practice, the href inside the link would point to a full https:// domain, and then google and other search engines would be able to make use of the hrflang element. To be more precise, Google and other search engines will ignore hreflang tags that do not use the full https:// domain.
